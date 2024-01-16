@@ -17,7 +17,7 @@ while liste_initiale == nouvelle_liste:
 
 print("Nouveau planning disponible !")
 new_planning_id = nouvelle_liste[0]["id"]
-print(f"Nouveau ID: {new_planning_id}") #7vf3pB
+print(f"Nouveau ID: {new_planning_id}")
 
 
 liste_creneaux = requests.get(f'https://shiftheroes.fr/api/v1/plannings/{new_planning_id}/shifts', headers=headers).json()
